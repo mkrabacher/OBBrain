@@ -1,0 +1,9 @@
+<button (click)="buildCalendar(2018)">log days</button>
+<table>
+    <thead>
+        <th *ngFor="let day of daysOfTheYear">{{day}}</th>
+    </thead>
+</table>
+<div *ngIf="cal">
+    {{cal[45]}}
+</div>
